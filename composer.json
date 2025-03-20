@@ -1,0 +1,41 @@
+{
+    "name": "akyoscommunication/maker-bundle",
+    "type": "library",
+    "description": "A Symfony Maker Bundle for creating CRUD with live components.",
+    "keywords": [
+        "symfony-ux",
+        "PHP",
+        "attribute",
+        "live component",
+        "crud"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johan JOULKVA",
+            "email": "johan.akyos@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Akyos\\MakerBundle\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "symfony/ux-live-component": "^2.19",
+        "akyoscommunication/ux-filter": "^1.0",
+        "akyoscommunication/ux-pagination": "^1.0",
+        "akyoscommunication/ux-table": "^1.0",
+        "symfony/ux-twig-component": "^2.0"
+    },
+    "require-dev": {
+    },
+    "extra": {
+        "thanks": {
+            "name": "symfony/ux",
+            "url": "https://github.com/symfony/ux"
+        }
+    },
+    "minimum-stability": "stable"
+}
