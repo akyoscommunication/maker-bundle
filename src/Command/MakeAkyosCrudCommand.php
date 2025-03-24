@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Command;
+namespace Akyos\MakerBundle\Command;
 
 use AllowDynamicProperties;
 use Doctrine\ORM\EntityManagerInterface;
@@ -25,7 +25,7 @@ class MakeAkyosCrudCommand extends Command
 {
 
     const MAKE_FORM_COMMAND = 'make:form';
-    const BASE_TPL_FILE = 'templates/maker/';
+    const BASE_TPL_FILE = __DIR__.'/../../templates/maker/';
     const BASE_TEMPLATE_TPL_FILE = self::BASE_TPL_FILE . 'twig/';
 
     const BASE_COMPONENT_TPL_FILE = self::BASE_TPL_FILE . 'components/';

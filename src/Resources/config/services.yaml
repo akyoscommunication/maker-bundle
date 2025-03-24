@@ -1,0 +1,11 @@
+services:
+    Akyos\MakerBundle\Command\:
+        resource: './../../Command/*'
+        tags: ['console.command']
+    
+    akyos_maker_bundle.command.make_akyos:
+        class: Akyos\MakerBundle\Command\MakeAkyosCrudCommand
+        arguments:
+            - '@doctrine.orm.entity_manager'
+            - '@maker.generator'
+        tags: ['console.command']

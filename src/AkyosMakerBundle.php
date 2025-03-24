@@ -2,8 +2,14 @@
 
 namespace Akyos\MakerBundle;
 
-use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
+use Akyos\MakerBundle\DependencyInjection\AkyosMakerExtension;
+use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class AkyosMakerBundle extends AbstractBundle
+class AkyosMakerBundle extends Bundle
 {
+    protected function createContainerExtension(): ?ExtensionInterface
+    {
+        return new AkyosMakerExtension();
+    }
 }
